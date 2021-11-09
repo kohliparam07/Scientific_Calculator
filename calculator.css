@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgba(1, 25, 54, 1); */
+    background-color: #ecf0f3;
+}
+.calculator{
+    /* background-color: snow; */
+    border-radius: 10px;
+    box-shadow: 12px 12px 20px #cdced1, -12px -12px 20px #ffffff;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.display #output{
+    width: 97%;
+    height: 70px;
+    font-size: 35px;
+    padding-right: 0.3em;
+    border-radius: 10px;
+    border: none;
+    margin-top: 12px;
+    margin-left: 12px;
+    background: #ecf0f3;
+    text-align: right;
+    outline: none;
+    box-shadow: inset 8px 8px 8px #cecbd1, inset -8px -8px 8px #ffffff;
+}
+.buttons{
+    /* border: 2px solid black; */
+    display: inline-block;
+    width: 90%;
+    height: 380px;
+    margin-top: 18px;
+    margin-left: 40px;
+}
+.btn{
+    width: 100px;
+    height: 60px;
+    margin-right: 1.265rem;
+    margin-top: 0.6rem;
+    border: none;
+    outline: none;
+    box-shadow:  5px 5px 8px #00000020,  -5px -5px 8px #ffffff;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.btn:hover{
+    box-shadow:  inset 5px 5px 8px rgba(16, 16, 16, .1), inset -5px -5px 8px rgba(16, 16, 16, .1);
+    /* background: #0000001e; */
+}
+#ac{
+    background: #3bff3b;
+    color: #fff;
+}
+#ce{
+    background: #ff56aa;
+    color: #fff;
+}
+#result{
+    background: #33ccff;
+    color: #fff;
+}
+.btn:active{
+    box-shadow: none;
+}
+
+@media (max-width: 800px){
+    .calculator{
+        width: 600px;
+        height: 400px;
+    }
+    .buttons{
+        width: 500px;
+        height: 300px;
+    }
+    .btn{
+        width: 67px;
+        height: 41px;
+    }
+}
+@media (max-width: 420px){
+    .calculator{
+        width: 325px;
+        height: 440px;
+    }
+    .buttons{
+        width: 285px;
+        height: 300px;
+        margin-top: 12px;
+        margin-left: 10px;
+    }
+    .btn{
+        width: 44.5px;
+        height: 55px;
+        margin-right: 0.3rem;
+        margin-top: 0.5rem;
+    }
+    .display #output{
+        width: 95%;
+        height: 70px;
+        font-size: 35px;
+        margin-top: 10px;
+        margin-left: 8px;
+    }
+}
